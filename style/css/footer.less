@@ -1,0 +1,63 @@
+.page-footer {
+	background-color: @colorBlock;
+	overflow: hidden;
+	margin-top: 100px;
+}
+.page-footer__title {
+	.honey-title ();
+	color: @colorWhite;
+	span {
+		font-weight: bold;
+	}
+}
+.page-footer__list {
+	color: @colorWhite;
+	font-size: 18px;
+	font-family: 'OpenSans-BoldItalic';
+	text-align: center;
+}
+.page-footer__list-item {
+	margin-bottom: 20px;
+}
+.linkedin {
+	background-size: 100% 100%; 
+	background-image: url(../img/no-translate-detected_318-26627.jpg);
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+	border-radius: 50%;
+    border: 7px solid white;
+}
+.git {
+	background-size: 100% 100%; 
+	background-image: url(../img/pBeeJQDQ.png);
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+	border-radius: 50%;
+}
+.social {
+	display: inline-block;
+	margin: 10px;
+}
+.page-footer__copy {
+	padding: 20px;
+    color: @colorGrey;
+    font-size: 12px;
+    text-align: center;
+    font-family: 'OpenSans-LightItalic';
+}
+
+@media screen and (max-width: 1024px) {
+	.page-footer__title {
+		font-size: 60px;
+	}
+}
+@media screen and (max-width: 768px) {
+
+}
+@media screen and (max-width: 414px) {
+	.page-footer__title {
+    	font-size: 35px;
+    }
+}

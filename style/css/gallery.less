@@ -1,0 +1,112 @@
+.page-main__gallery {
+	background-color: @colorBlock;
+	margin-top: 100px;
+}
+.page-main__gallery-titile {
+	.honey-title ();
+	color: @colorWhite;
+}
+.page-main__gallery-deskription {
+	.honey-title ();
+	color: @colorWhite;
+	font-size: 50px;
+	padding-top: 50px;
+}
+// галерея работ
+.page-main__my-works {
+	margin: 0 auto;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0 auto;
+	padding: 20px 0;
+}
+.my-works__gallery-item {
+	width: 300px;
+	height: 300px;
+	position: relative;
+	list-style: none;
+	overflow: hidden;
+	margin: 20px;
+	border-radius: 10px;
+	border: 1px solid @colorBottom;
+	cursor: pointer;
+	img {
+	    width: 300px;
+	    height: 300px;
+	    transition: all 0.5s;
+	    &:hover {
+	    	transform: scale(1.5);
+	    }
+	}
+  .my-works__hover-block{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 0px;
+    left: -300px;
+    background: rgba(137, 137, 137, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 25px;
+    transition: .5s;
+    border-radius: 10px;
+  }
+  &:hover .my-works__hover-block{
+    left: 0px;
+  }
+}
+// кнопки 
+.github {
+.git-battom ();
+	position: relative;
+	&:before {
+		content: '';
+		background-size: 100% 100%;
+		width: 50px;
+		height: 50px;
+		background-image: url(../img/pBeeJQDQ.png);
+		border-radius: 50%;
+		position: absolute;
+    	top: -75px;
+    	left: 60px;
+	}
+}
+.github-description {
+.git-battom ();
+	width: 100%;
+	padding: 10px 0;
+}
+
+@media screen and (max-width: 1024px) {
+	.page-main__gallery-titile {
+		font-size: 60px;
+	}
+	.page-main__gallery-deskription {
+		font-size: 60px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.page-main__gallery {
+		margin-top: 170px;
+	}
+
+}
+@media screen and (max-width: 414px) {
+	.page-main__gallery{
+		.container{
+			padding: 10px;
+		}
+	}
+	.page-main__gallery-titile {
+	    font-size: 35px;
+	    padding: 10px 0;
+	}
+	.page-main__gallery-deskription {
+	    font-size: 35px;
+	    padding: 10px 0;
+	}
+}

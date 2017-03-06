@@ -1,0 +1,342 @@
+// Блок про меня
+.page-main__about-me {
+	margin-top: 100px;
+}
+.page-main__wrapper {
+	.fixy ();
+	flex-wrap: wrap;
+}
+.page-main__my-foto {
+    margin-right: 40px;
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	background-image: url(../img/myfoto.jpg);
+	background-position-x: 408px;
+    background-position-y: 379px;
+    border: 1px solid @colorBottom;
+}
+.page-main__my-description {
+	width: 70%;
+	text-align: left;
+	margin: auto;
+	font-size: 18px;
+	line-height: 1.5;
+    font-family: OpenSans-BoldItalic;
+}
+// Начала следующей части про меня
+.page-main__title {
+	.honey-title ();
+}
+// блок с полоской 
+.page-main__column {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	width: 100%;
+}
+// Заголовок
+.block-title {
+	.block-title-style ();
+	&:before { 
+		background: url(../img/basic-book-pen.png) center no-repeat;
+	}
+}
+// блок с полоской 
+.page-main__column-block{
+	.column-style();
+	&:after{
+		height: 38%;
+		.column-psevdo__block ();
+	}
+}
+.page-main__column-block--second {
+	.column-style();
+	&:after{
+		height: 27%;
+		.column-psevdo__block ();
+	}
+}
+.column-block__wrapper-title {
+	font-size: 18px;
+	text-transform: uppercase;
+	line-height: 30px;
+	&:before {
+		.round;
+		left: -7px;
+		background-color: @colorRed;
+	}
+}
+.column-block__wrapper-description {
+	font-size: 16px;
+	line-height: 1.5;
+	font-family: 'OpenSans-LightItalic';
+}
+.column-block__wrapper {
+	width: 100%;
+	position: relative;
+	padding-left: 20px;
+	&:not(:last-child){
+		margin-bottom: 20px;
+	}
+}
+
+
+// блок с шариками 
+.page-main__column-block-boll {
+	display: flex;
+    flex-direction: column;
+	width: 45%;
+	position: relative;
+	font-family: 'OpenSans-BoldItalic';
+	.block-title {
+		.block-title-style ();
+		&:before {
+			background: url(../img/tools7.png) center no-repeat;
+		}
+	}
+}
+.column-block-boll__wrapper {
+	width: 100%;
+    text-align: right;
+    position: relative;
+	&:not(:last-child){
+		margin-bottom: 20px;
+	}
+}
+.it-title {
+	text-align: center;
+	font-size: 18px;
+	color: @colorRed;
+	margin-bottom: 10px;
+}
+.column-block-boll__wrapper-title {
+	width: 50%;
+	font-size: 18px;
+	text-transform: uppercase;
+	line-height: 30px;
+	position: relative;
+}
+.column-block-boll__wrapper-descript {
+	width: 63%;
+	font-size: 16px;
+	line-height: 1.5;
+	text-align: right;
+	font-family: 'OpenSans-LightItalic';
+}
+.line-ball {
+	position: absolute;
+	top: 5px;
+    left: 290px;
+	ul {
+		display: inline-block;
+	}
+}
+.red {
+	background-color: @colorRed;
+}
+.button-ball {
+	display: inline-block;
+	height: 10px;
+	width: 10px;
+	border: 2px solid @colorRed;;
+	border-radius: 50%;
+	top: 10px;
+	outline: 2px solid @colorWhite;
+	&:not(:last-child) {
+		margin-right: 5px;
+	}
+}
+// Блок с образованием
+.education {
+	.block-title-style ();
+	&:before { 
+		background: url(../img/compass58.png) center no-repeat;
+	}
+}
+// блок с воздушными шариками
+.balloon-block {
+	display: flex;
+	margin-top: 50px;
+	padding-top: 50px;
+
+}
+.balloon-block__big {
+	background: white;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	border: 1px solid @colorRed;
+	position: relative;
+	&:after{
+		content: '';
+		height: 56%;
+		width: 2px;
+		background: @colorRed;
+		position: absolute;
+		margin-left: 50px;
+    	top: 99px;
+	}
+	&:nth-child(1) {
+		transform: translate(0,10%);
+		background: url(../img/basic-smartphone.png) center no-repeat;
+		background-size: 40% 60%;
+		position: relative;
+		&:before{
+			.ballon-child__style ();
+		}
+	}
+	&:nth-child(2) {
+		transform: translate(-20%,55%);
+		background: url(../img/hand61.png) center no-repeat;
+		background-size: 40% 60%;
+		background-color: @colorWhite;
+		&:before{
+			.ballon-child__style ();
+		}
+	}
+	&:nth-child(3) {
+		transform: translate(-40%,0);
+		background: url(../img/popcorn.png) center no-repeat;
+		background-size: 40% 60%;
+		background-color: @colorWhite;
+		&:before{
+			.ballon-child__style ();
+		}
+	}
+	&:nth-child(4) {
+		transform: translate(-70%,70%);
+		background: url(../img/studio.png) center no-repeat;
+		background-size: 60% 60%;
+		background-color: @colorWhite;
+		&:before{
+			.ballon-child__style ();
+		}
+	}
+	&:nth-child(5) {
+		transform: translate(-90%,20%);
+		background: url(../img/round2.png) center no-repeat;
+		background-size: 55% 60%;
+		background-color: @colorWhite;
+		&:before{
+			.ballon-child__style ();
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.page-main__about-me {
+		padding: 0 20px;
+	}
+	.page-main__my-foto {
+    	margin-right: 0px;
+    }
+    .page-main__my-description {
+		font-size: 16px;
+	}
+	.page-main__title {
+		font-size: 60px;
+	}
+	.column-block__wrapper-title,
+	.column-block-boll__wrapper-title {
+    	font-size: 16px;
+    }
+    .column-block__wrapper-description {
+    	font-size: 14;
+    }
+    .column-block-boll__wrapper-descript {
+    	font-size: 14;
+    }
+	.page-main__column-block{
+		.column-style();
+		&:after{
+			height: 43%;
+		}
+	}
+	.line-ball {
+    	left: 240px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+	.page-main__column {
+		flex-direction: column;
+	    width: 100%;
+	    justify-content: center;
+	    align-items: center;
+	}
+	.page-main__column-block-boll {
+		width: 60%;
+	}
+}
+@media screen and (max-width: 414px) {
+	.page-main__about-me {
+		padding: 0 10px;
+	}
+	.page-main__my-foto {
+	    height: 150px;
+	    width: 150px;
+	    background-position-x: 385px;
+	    background-position-y: 375px;
+	    margin: auto; 
+    }
+    .page-main__my-description {
+    	padding-top: 20px;
+	    font-size: 12px;
+	    text-align: center;
+	    width: 100%;
+	}
+	// не работает
+	.page-main__title {
+    	font-size: 35px;
+    }
+    .page-main__column-block,
+    .page-main__column-block--second {
+    	width: 100%;
+    		&:after {
+    			display: none
+    		}
+    }
+    .column-block__wrapper-title {
+    	width: 100%;
+		&:before {
+			display: none;
+		}
+	}
+	.column-block__wrapper {
+		text-align: center;
+		padding-left: 0;
+	}
+   .page-main__column-block-boll {
+   		width: 100%;
+   	}
+   	.column-block-boll__wrapper-title {
+   		width: 100%;
+   		position: static;
+   		text-align: center;
+   	}
+   	.column-block-boll__wrapper-descript {
+		width: 100%;
+		position: static;
+		text-align: center;
+	}
+   	.line-ball {
+   		position: static;
+    	text-align: center;
+    }
+    .button-ball {
+		height: 7px;
+		width: 7px;
+		border: 1px solid @colorRed;;
+		border-radius: 50%;
+		top: 5px;
+		outline: 2px solid @colorWhite;
+		&:not(:last-child) {
+			margin-right: 5px;
+		}
+	}
+    .balloon-block {
+    	display: none;
+    }
+}

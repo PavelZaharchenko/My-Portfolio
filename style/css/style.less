@@ -1,0 +1,60 @@
+@import url(mixin.less);
+@import url(header.less);
+@import url(sleder.less);
+@import url(aboutMy.less);
+@import url(gallery.less);
+@import url(footer.less);
+@import url(animate.css);
+
+
+@font-face {
+    font-family: HoneyScript;
+    src: url(../fonts/OpenSans-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: 'OpenSans-BoldItalic';
+    src: url(../fonts/OpenSans-Semibold.ttf);
+}
+@font-face {
+    font-family: 'OpenSans-LightItalic';
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+// body {
+// 	position: relative;
+// }
+* {
+	box-sizing: border-box;
+}
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: auto;
+}
+a {
+	text-decoration: none;
+	transition: 0.5s;
+}
+@keyframes bouncing{
+	0%  { bottom: 0; }
+	100% { bottom: 50px; }
+}
+// кнопка вверх
+.button-up {
+	position: fixed;
+	display: none;
+	cursor: pointer;
+	display: block;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 1px solid @colorWhite;
+	background: url(../img/-.png) center no-repeat;
+	background-color: @colorBottom;
+	transform: rotate(-180deg);
+	bottom: 20px;
+	right: 1%;
+    &:hover {
+    	border: 1px solid @colorRed;
+    }
+}
