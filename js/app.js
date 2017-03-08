@@ -7,13 +7,13 @@ $(function () {
 	$('.page-header__nav-item a').click(function(e) {
 		e.preventDefault();
 		var thisEl = $(this).attr('href');
-		var top = $(thisEl).offset().top +800;
+		var top = $(thisEl).offset().top;
 		$('body,html').animate({scrollTop: top}, 500);
 	});
+	
 	$('.page-header__mobile-nav').click(function() {
 		$('.page-header__nav').toggleClass('open');
 	})
-
 
 	$('.button-up').click(function(){
 		$('body').animate({scrollTop : 0}, 500);
